@@ -1,0 +1,32 @@
+# Translation for the Wikipedia Citations plugin for Omeka.
+# Copyright (C) 2020 Daniele Binaghi
+# This file is distributed under the same license as the Omeka package.
+# Daniele Binaghi <admin@bitoteko.it>, 2020
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Wikipedia Citations\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-03 11:54+0200\n"
+"PO-Revision-Date: 2020-08-03 12:06+0200\n"
+"Last-Translator: Daniele Binaghi <admin@bitoteko.it>\n"
+"Language-Team: Esperanto\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: WikipediaCitationsPlugin.php:44
+#: WikipediaCitationsPlugin.php:68
+msgid "%1$s and %2$s"
+msgstr "%1$s kaj %2$s"
+
+#: WikipediaCitationsPlugin.php:48
+#: WikipediaCitationsPlugin.php:72
+msgid "%1$s, %2$s and %3$s"
+msgstr "%1$s, %2$s kaj %3$s"
+
+#: WikipediaCitationsPlugin.php:101
+msgid "accessed %1$s, %2$s"
+msgstr "vizitita je %1$s, %2$s"
