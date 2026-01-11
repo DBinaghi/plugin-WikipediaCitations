@@ -89,7 +89,7 @@ class WikipediaCitationsPlugin extends Omeka_Plugin_AbstractPlugin
 			$extra = metadata($item, array('Item Type Metadata', 'ISBN')) ? 'ISBN ' . metadata($item, array('Item Type Metadata', 'ISBN')) . ', ' : ''; 
 		} elseif (element_exists('Item Type Metadata', 'ISSN')) {
 			$extra = metadata($item, array('Item Type Metadata', 'ISSN')) ? 'ISSN ' . metadata($item, array('Item Type Metadata', 'ISSN')) . ', ' : ''; 
-		} elseif (strpos(metadata($item, array('Dublin Core', 'Identifier')), 'ISBN') !== false || strpos(metadata($item, array('Dublin Core', 'Identifier')), 'ISSN') !== false) {
+		} elseif (!is_null(metadata($item, array('Dublin Core', 'Identifier'))) && (strpos(metadata($item, array('Dublin Core', 'Identifier')), 'ISBN') !== false || strpos(metadata($item, array('Dublin Core', 'Identifier')), 'ISSN') !== false)) {
 			$extra = metadata($item, array('Dublin Core', 'Identifier')) . ',';
 		}
 		
